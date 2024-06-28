@@ -7,6 +7,22 @@ import Pagination from '../Pagination.jsx';
 function Anime() {
   const [anime, setAnime] = useState([])
   const [pageNo,setPageNo]= useState(1)
+  const [watchList,setWatchList]=useState( JSON.parse(localStorage.getItem('watchlist')) || []);
+
+  const handleAddToWatchList = (animeObj)=>{
+    const newWatchList = [...watchList,animeObj]
+    localStorage.setItem("watchlist",JSON.stringify(newWatchList));
+    setWatchList(newWatchList)
+    // console.log(newWatchList)
+  }
+
+  const handleRemoveFromWatchList = (animeObj)=>{
+    const filteredWatchlist = watchList.filter((added)=>{
+      return added.mal_id != animeObj.mal_id
+    })
+    localStorage.setItem("watchlist",JSON.stringify(filteredWatchlist));
+    setWatchList(filteredWatchlist)
+  }
 
   function handlePrev(){
     if(pageNo===1){
@@ -28,12 +44,13 @@ function Anime() {
       try {
         const res = await axios.get(`${api_URL}${pageNo}`);
         setAnime(res.data.data)
-        console.log(res.data)
+        // console.log(res.data)
       } catch (error) {
         console.error('Error fetching data:', error);
       }
     }
     fetchData();
+    console.log(watchList);
   }, [pageNo]);
 
   return (
@@ -45,7 +62,7 @@ function Anime() {
         </div>
         <div className='flex flex-row flex-wrap justify-around gap-10'>
           {anime.map((animeObj) => (
-            <AnimeCard key={animeObj.mal_id} image_url={animeObj.images.jpg.image_url} title={animeObj.title_english}/>
+            <AnimeCard key={animeObj.mal_id} watchList={watchList} animeObj={animeObj} image_url={animeObj.images.jpg.image_url} title={animeObj.title_english} handleAddToWatchList={handleAddToWatchList} handleRemoveFromWatchList={handleRemoveFromWatchList}/>
           ))}
         </div>
         <Pagination pageNo={pageNo} handlePrev={handlePrev} handleNext={handleNext}/>
