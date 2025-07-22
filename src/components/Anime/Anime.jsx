@@ -54,7 +54,7 @@ function Anime() {
   }, [pageNo]);
 
   return (
-    <div>
+    <div className='overflow-hidden'>
       <Banner/>
       <div>
         <div className='w-full text-3xl text-center p-5 m-4'>

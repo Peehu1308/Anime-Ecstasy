@@ -23,7 +23,7 @@ function AnimeCard({ image_url, title, handleAddToWatchList, animeObj, handleRem
         </div>)}
 
 
-      <div className='text-white w-full  text-center font-bold p-3 bg-gray-900/70'>
+      <div className='text-white w-full  text-center font-bold p-3 bg-gray-900/70 rounded-br-lg rounded-bl-lg'>
         {title}
       </div>
 
