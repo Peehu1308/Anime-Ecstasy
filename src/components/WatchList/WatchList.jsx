@@ -1,18 +1,31 @@
 import React, { useEffect, useState } from "react";
 import { FaArrowUp } from "react-icons/fa";
 import { FaArrowDown } from "react-icons/fa";
+import Spinner from "../Spinner";
 
 function WatchList() {
   const [watchList, setWatchList] = useState([]);
   const [search, setSearch] = useState("");
   const [genreList, setGenreList] = useState(["All Genres"]);
   const [currGenre, setCurreGenre] = useState("All Genres");
+  const [loading, setLoading] = useState(true);
+  
 
   useEffect(() => {
-    if (!localStorage.getItem("watchlist")) {
-      return;
-    }
-    setWatchList(JSON.parse(localStorage.getItem("watchlist")));
+
+      setLoading(true);  //start loading
+
+        setTimeout(() => {
+          if (!localStorage.getItem("watchlist")) {
+           return;
+           } 
+          
+           setWatchList(JSON.parse(localStorage.getItem("watchlist")));
+       
+        setLoading(false); //stop loading
+
+        }, 200); // simulate 200ms delay to show spinner
+      
   }, []);
 
   const handleSearch = (e) => {
@@ -52,6 +65,11 @@ function WatchList() {
     temp = new Set(temp);
     setGenreList(["All Genres", ...temp]);
   }, [watchList]);
+
+  if (loading)     //if loading is true , return spinner.
+    {
+  return <Spinner />;
+    }
 
   return (
     <>
