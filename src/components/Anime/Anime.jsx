@@ -41,7 +41,7 @@ function Anime() {
   function handleNext(){
         setPageNo(pageNo+1)
   }
-
+// Fetch anime data based on search or trending
   useEffect(() => {
     async function fetchData() {
       try {

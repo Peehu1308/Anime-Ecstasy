@@ -7,11 +7,13 @@ export const Navbar = () => {
     const [inputValue, setInputValue] = useState("")
     const navigate = useNavigate()
 
+    // Toggles the visibility of the search input and resets the input value
     const toggleSearch = () => {
         setShowSearch(!showSearch)
         setInputValue("")
     }
 
+    // Handles search when 'Enter' is pressed
     const handleKeyDown = (e) => {
         if (e.key === 'Enter') {
             if (inputValue.trim() !== "") {
