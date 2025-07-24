@@ -3,7 +3,7 @@
 <h1 align="center> Anime Ecstasy 🎬 </h1>
 
 Welcome to **Anime Ecstasy** – your browser’s new home for discovering, organizing, and binging on trending anime!  
-This project is a simple and fun single-page React app where you can browse popular anime, view details, and manage your personal “Watch-list” right from your browser.
+This project is a simple and fun React-based website where you can browse popular anime, view details, and manage your personal “Watch-list” right from your browser.
 
 ![Project preview](image-2.png)
 *Trending Anime grid and watchlist in action.*
