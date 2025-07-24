@@ -1,87 +1,74 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Anime Ecstasy - README</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-</head>
-<body class="bg-gray-100 text-gray-800 p-8">
-  <div class="max-w-4xl mx-auto bg-white p-8 rounded-lg shadow-md">
-    <h1 class="text-3xl font-bold mb-4">🌸 Anime Ecstasy</h1>
-    <p class="mb-6 text-lg">A sleek and interactive anime browsing <strong>website</strong> built using React, Vite, Tailwind CSS, and the Jikan API.</p>
+<h1 align="center" style="color: black; font-size: 3rem; font-weight: bold;">🎴 Anime Ecstasy</h1>
 
-    <section class="mb-6">
-      <h2 class="text-xl font-semibold mb-2">📌 Summary</h2>
-      <ul class="list-disc list-inside space-y-1">
-        <li>🔥 Trending Anime Gallery with posters and titles</li>
-        <li>➕ Add/Remove to Watchlist (powered by <code>localStorage</code>)</li>
-        <li>📄 Anime Details View with dynamic content</li>
-        <li>🔄 Pagination for large datasets</li>
-        <li>📱 Fully responsive design using Tailwind CSS</li>
-        <li>⚙️ API integration using Axios + React (Vite)</li>
-      </ul>
-    </section>
+<p align="center">
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=22&pause=1000&color=343434&center=true&vCenter=true&width=500&height=45&lines=Your+Personal+Anime+Haven;Explore+Trending+Anime;Build+Your+Watchlist;Built+Using+React%2C+Tailwind+%26+Jikan+API" alt="Typing SVG">
+</p>
 
-    <section class="mb-6">
-      <h2 class="text-xl font-semibold mb-2">🧱 Tech Stack</h2>
-      <ul class="list-disc list-inside space-y-1">
-        <li>React (Vite)</li>
-        <li>Axios</li>
-        <li>Tailwind CSS</li>
-        <li>Jikan REST API</li>
-        <li>LocalStorage</li>
-        <li>Vanilla CSS (in components)</li>
-      </ul>
-    </section>
+<h3 align="center">✨ A fast, interactive, and beautifully designed anime discovery <strong>website</strong>.</h3>
 
-    <section class="mb-6">
-      <h2 class="text-xl font-semibold mb-2">🛠️ Folder Structure</h2>
-      <pre class="bg-gray-100 p-4 rounded text-sm overflow-x-auto">
+<br />
+
+<h3 align="left">🚀 Features:</h3>
+<ul>
+  <li>🔥 Trending Anime Gallery with posters and titles</li>
+  <li>📄 Anime Details View with dynamic content</li>
+  <li>➕ Add/Remove from Watchlist (powered by <code>localStorage</code>)</li>
+  <li>🔄 Pagination to navigate through large datasets</li>
+  <li>📱 Fully Responsive UI using Tailwind CSS</li>
+  <li>⚙️ API Integration using Axios + Jikan API</li>
+</ul>
+
+<br />
+
+<h3 align="left">🧱 Tech Stack:</h3>
+<ul>
+  <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" width="25"/> React (Vite)</li>
+  <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="25"/> JavaScript</li>
+  <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width="25"/> Tailwind CSS</li>
+  <li><img src="https://axios-http.com/assets/logo.svg" width="20"/> Axios</li>
+  <li>🧠 Jikan REST API</li>
+  <li>💾 LocalStorage</li>
+</ul>
+
+<br />
+
+<h3 align="left">📁 Folder Structure:</h3>
+
+<pre>
 anime-ecstasy/
-├── .github/
-├── .vscode/
-├── node_modules/
 ├── public/
 ├── src/
 │   ├── assets/
 │   ├── components/
 │   ├── App.jsx
-│   ├── App.css
-│   ├── index.css
 │   └── main.jsx
-├── CONTRIBUTION.md
-├── index.html
 ├── tailwind.config.js
 ├── postcss.config.js
 ├── vite.config.js
-├── README.md
-      </pre>
-    </section>
+├── CONTRIBUTION.md
+└── README.md
+</pre>
 
-    <section class="mb-6">
-      <h2 class="text-xl font-semibold mb-2">✅ How to Run</h2>
-      <pre class="bg-gray-100 p-4 rounded text-sm overflow-x-auto">
+<br />
+
+<h3 align="left">✅ How to Run:</h3>
+<pre>
 git clone https://github.com/yourusername/anime-ecstasy.git
 cd anime-ecstasy
 npm install
 npm run dev
-      </pre>
-    </section>
+</pre>
 
-    <section class="mb-6">
-      <h2 class="text-xl font-semibold mb-2">🧑‍💻 Contributions</h2>
-      <p>Please read the <code>CONTRIBUTION.md</code> file before submitting pull requests.</p>
-    </section>
+<br />
 
-    <section>
-      <h2 class="text-xl font-semibold mb-2">📸 Previews</h2>
-      <ul class="list-disc list-inside space-y-1">
-        <li>Hero banner, anime grid, and watchlist showcase</li>
-        <li>Fully responsive layout across devices</li>
-        <li>Add hover effects to anime cards (UI polish)</li>
-      </ul>
-    </section>
-  </div>
-</body>
-</html>
+<h3 align="left">🧑‍💻 Contributions:</h3>
+<p>Before contributing, please check out <code>CONTRIBUTION.md</code> for best practices and guidelines.</p>
+
+<br />
+
+<h3 align="left">📸 Previews:</h3>
+<ul>
+  <li>🎯 Hero banner, anime grid, and watchlist layout</li>
+  <li>🔁 Smooth UI interactions and animations</li>
+  <li>📱 Responsive layout across all devices</li>
+</ul>
