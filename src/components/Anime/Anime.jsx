@@ -71,8 +71,8 @@ function Anime() {
      }
 
   return (
-    <div>
-      <Banner />
+    <div className='overflow-hidden'>
+      <Banner/>
       <div>
         <div className="w-full text-3xl text-center p-5 m-4">
           Trending Anime
