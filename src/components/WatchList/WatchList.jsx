@@ -17,14 +17,14 @@ function WatchList() {
 
         setTimeout(() => {
           if (!localStorage.getItem("watchlist")) {
+            setLoading(false); //stop loading
            return;
            } 
           
            setWatchList(JSON.parse(localStorage.getItem("watchlist")));
        
-        setLoading(false); //stop loading
 
-        }, 200); // simulate 200ms delay to show spinner
+        }, 300); // simulate 300ms delay to show spinner
       
   }, []);
 
