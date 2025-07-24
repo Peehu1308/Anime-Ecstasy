@@ -3,6 +3,8 @@ import Banner from "./Banner.jsx";
 import axios from "axios";
 import AnimeCard from "./AnimeCard.jsx";
 import Pagination from "../Pagination.jsx";
+import Spinner from "../Spinner.jsx";
+
 
 function Anime() {
   const [anime, setAnime] = useState([]);
@@ -10,6 +12,9 @@ function Anime() {
   const [watchList, setWatchList] = useState(
     JSON.parse(localStorage.getItem("watchlist")) || []
   );
+
+  const [loading, setLoading] = useState(true);
+
 
   const handleAddToWatchList = (animeObj) => {
     const newWatchList = [...watchList, animeObj];
@@ -40,6 +45,9 @@ function Anime() {
 
   useEffect(() => {
     async function fetchData() {
+
+          setLoading(true); // Start loading
+
       const api_URL = import.meta.env.VITE_API_URL;
 
       try {
@@ -48,11 +56,19 @@ function Anime() {
         // console.log(res.data)
       } catch (error) {
         console.error("Error fetching data:", error);
-      }
+      } 
+      finally {
+      setLoading(false); // Stop loading
+    }
     }
     fetchData();
     console.log(watchList);
   }, [pageNo]);
+
+  if (loading) 
+    {
+  return <Spinner />;
+     }
 
   return (
     <div>
