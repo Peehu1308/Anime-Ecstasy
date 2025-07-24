@@ -1,9 +1,7 @@
-// src/pages/Login.jsx
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { signInWithPopup } from 'firebase/auth';
-import { auth, provider } from '../../firebase'; // adjust path as needed
-
+import { auth, provider } from '../../firebase';
 const Login = () => {
   const navigate = useNavigate();
 
@@ -14,7 +12,7 @@ const Login = () => {
 
       console.log('Logged in as:', user.displayName, user.email);
 
-      // Save user info in localStorage
+     
       localStorage.setItem('user', JSON.stringify({
         name: user.displayName,
         email: user.email,
@@ -22,7 +20,7 @@ const Login = () => {
         uid: user.uid,
       }));
 
-      // Redirect to home page
+    
       navigate('/');
     } catch (error) {
       console.error('Google sign-in error:', error.message);

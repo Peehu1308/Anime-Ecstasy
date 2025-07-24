@@ -6,7 +6,7 @@ import {
   inMemoryPersistence,
 } from 'firebase/auth';
 
-import { getFirestore } from 'firebase/firestore'; // ✅ Firestore import
+import { getFirestore } from 'firebase/firestore';
 
 const firebaseConfig = {
   apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
@@ -19,7 +19,7 @@ const firebaseConfig = {
 
 const app = initializeApp(firebaseConfig);
 
-// ✅ Auth setup
+
 const auth = getAuth(app);
 setPersistence(auth, inMemoryPersistence).catch((error) => {
   console.error("Firebase persistence error:", error);
@@ -27,7 +27,7 @@ setPersistence(auth, inMemoryPersistence).catch((error) => {
 const provider = new GoogleAuthProvider();
 provider.setCustomParameters({ prompt: 'select_account' });
 
-// ✅ Firestore setup
+
 const db = getFirestore(app);
 
 export { auth, provider, db };
