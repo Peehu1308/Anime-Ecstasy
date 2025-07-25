@@ -23,13 +23,14 @@ function Anime() {
     // console.log(newWatchList)
   };
 
-  const handleRemoveFromWatchList = (animeObj) => {
+    const handleRemoveFromWatchList = (animeObj) => {
     const filteredWatchlist = watchList.filter((added) => {
-      return added.mal_id != animeObj.mal_id; // it will return added.mal_id
-    });
-    localStorage.setItem("watchlist", JSON.stringify(filteredWatchlist));
-    setWatchList(filteredWatchlist);
-  };
+      return added.mal_id !== animeObj.mal_id
+    })
+    localStorage.setItem("watchlist", JSON.stringify(filteredWatchlist))
+    setWatchList(filteredWatchlist)
+  }
+
 
   function handlePrev() {
     if (pageNo === 1) {
