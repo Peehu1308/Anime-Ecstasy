@@ -1,7 +1,8 @@
+
 # 🌸 Anime Ecstasy
 
 > 🎥 Your ultimate **Anime Discovery & Watchlist App** – powered by React + Tailwind + Anime API  
-> [🌐 Live Demo](https://anime-ecstasy.chandrasekhara.me) • ![MIT License](https://img.shields.io/badge/license-MIT-green)
+> [🌐 Live Demo](https://anime-ecstasy.chandrasekhara.me)      •      ![MIT License](https://img.shields.io/badge/license-MIT-green)
 
 ---
 
@@ -25,11 +26,12 @@
 
 ## 🖼️ Screenshots
 
-> *Want to experience it live?* ➡️ [Click here for demo](https://anime-ecstasy.chandrasekhara.me)
+> 🧪 *Try the live version here:* [Anime Ecstasy Demo](https://anime-ecstasy.chandrasekhara.me)
 
-| Hero Section | Anime Grid | Watchlist |
-|:------------:|:----------:|:---------:|
-| ![Hero](https://dummyimage.com/600x250/fafafa/aaa&text=Hero+Banner) | ![Grid](https://dummyimage.com/600x250/fafafa/aaa&text=Anime+Cards) | ![Watchlist](https://dummyimage.com/600x250/fafafa/aaa&text=Watchlist+Example) |
+![Hero Section](./public/screenshots/hero.png)
+![Search Results](./public/screenshots/search-results.png)
+![Trending Anime](./public/screenshots/trending-anime.png)
+
 
 ---
 
@@ -60,24 +62,24 @@ Use these real fan-favorite titles to populate your gallery:
 - **🎭 Oshi no Ko**
 - **📜 Frieren: Beyond Journey's End**
 
-Need sample data for testing? Just ask!
-
 ---
 
 ## 🗂️ Project Structure
 
+```
 src/
 ├── components/
-│ ├── Anime/
-│ │ ├── Anime.jsx
-│ │ ├── AnimeCard.jsx
-│ │ ├── Banner.jsx
-│ │ └── Pagination.jsx
-│ ├── Navbar.jsx
-│ └── WatchList.jsx
+│   ├── Anime/
+│   │   ├── Anime.jsx
+│   │   ├── AnimeCard.jsx
+│   │   ├── Banner.jsx
+│   │   └── Pagination.jsx
+│   ├── Navbar.jsx
+│   └── WatchList.jsx
 ├── App.jsx
 ├── main.jsx
 └── assets/
+```
 
 ---
 
@@ -85,56 +87,57 @@ src/
 
 ### 📦 Clone the Repo
 
-```bash
+```
 git clone https://github.com/Chandu6702/anime-ecstasy.git
 cd anime-ecstasy
-bash```
+```
 
-📥 Install Dependencies
-```bash
+### 📥 Install Dependencies
+
+```
 npm install
-```bash
+```
 
-🧪 Run the App
-```bash
+### 🧪 Run the App
+
+```
 npm run dev
-```bash
+```
 
-Open: http://localhost:5173 in your browser 🎉
+Open your browser and go to: `http://localhost:5173` 🎉
 
 ---
 
-🤝 Contributing
+## 🤝 Contributing
+
 All anime lovers and open-source enthusiasts are welcome!
 
-How to Contribute
-🍴 Fork the repository
+### How to Contribute
 
-🪴 Create a new branch (git checkout -b feature-name)
+1. 🍴 Fork the repository  
+2. 🪴 Create a new branch  
+   ```
+   git checkout -b feature-name
+   ```
+3. 💻 Make your changes  
+4. ✅ Test your changes locally  
+5. 🚀 Open a Pull Request
 
-💻 Make your changes
-
-✅ Test your changes locally
-
-🚀 Open a Pull Request
-
-Please read CONTRIBUTING.md for detailed contribution guidelines.
+Please read [`CONTRIBUTING.md`](./CONTRIBUTING.md) for detailed guidelines.
 
 ---
 
-📄 License
-This project is licensed under the MIT License.
+## 📄 License
+
+This project is licensed under the **MIT License**.  
 You are free to use, modify, and distribute this software as long as the original license is included.
 
-View the full license here
+View the full license [here](./LICENSE).
 
 ---
 
-💖 Created with Passion
-“For the fans who start one episode... and end up finishing the whole season at 3AM.”
+## 💖 Created with Passion
 
-Made with ❤️ by Anime-Ecstasy
+> _“For the fans who start one episode... and end up finishing the whole season at 3AM.”_
 
----
-
-
+Made with ❤️ by **Anime Ecstasy**
