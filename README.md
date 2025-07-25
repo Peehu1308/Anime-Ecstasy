@@ -46,7 +46,6 @@
 
 ![Trending Anime](./public/screenshots/trending-anime.png)
 
----
 
 ---
 
