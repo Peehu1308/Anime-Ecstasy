@@ -1,59 +1,87 @@
 
+# 🌸 Anime Ecstasy
 
-<h1 align="center> Anime Ecstasy 🎬 </h1>
-
-Welcome to **Anime Ecstasy** – your browser’s new home for discovering, organizing, and binging on trending anime!  
-This project is a simple and fun React-based website where you can browse popular anime, view details, and manage your personal “Watch-list” right from your browser.
-
-![Project preview](image-2.png)
-*Trending Anime grid and watchlist in action.*
+> 🎥 Your ultimate **Anime Discovery & Watchlist App** – powered by React + Tailwind + Anime API  
+> [🌐 Live Demo](https://anime-ecstasy.chandrasekhara.me) • ![MIT License](https://img.shields.io/badge/license-MIT-green)
 
 ---
 
-## 🚀 Features
+## 📺 What is Anime Ecstasy?
 
-- **Trending Anime Gallery:** Browse through popular titles with cool posters and titles.
-- **Add to Watch-List:** Save your favorites with a single click. Your watchlist persists thanks to `localStorage`—never lose your place!
-- **Remove from Watch-List:** Change your mind? Remove any title anytime.
-- **Pagination Controls:** Effortlessly flip through anime pages using intuitive navigation.
-- **Responsive Design:** Looks great on mobile, tablet, and desktop.
+**Anime Ecstasy** is your personal anime dashboard – browse trending anime, add them to your watchlist, and keep track of what you love. A beautiful, responsive UI built for fans by fans.
 
 ---
 
-## 🖼️ Demo
+## ✨ Key Features
 
-You can try the app live here:  
-[https://anime-ecstasy.chandrasekhara.me](https://anime-ecstasy.chandrasekhara.me)
-
----
-
-## 📸 Screenshots
-
-![Hero banner and navigation](image.png)
-*Hero banner and navigation*
-
-![Trending Anime grid](image-1.png)
-*Anime gallery with cards*
-
-![Pagination Example](image-3.png)
-*Pagination at the bottom of the gallery*
+| Feature | Description |
+|--------|-------------|
+| 🎬 **Trending Anime Gallery** | Explore the most talked-about anime with stunning visuals and titles. |
+| ⭐ **Add to Watchlist** | Found something you like? Save it instantly. Your list is safe even after closing the browser – thanks to `localStorage`. |
+| ❌ **Remove from Watchlist** | No longer interested? Remove any anime with a single click. |
+| 📖 **Pagination** | Browse seamlessly across multiple pages using intuitive pagination. |
+| 📱 **Fully Responsive** | Works flawlessly on mobile, tablet, and desktop screens. |
 
 ---
 
-## 🛠️ Tech Stack
+### 🖼️ Screenshots
 
-- **React** (Vite)
-- **Axios** for API requests
-- **Tailwind CSS** for styling
-- **LocalStorage** for persistent watch-lists
+> 🧪 *Try the live version here:* [Anime Ecstasy Demo](https://anime-ecstasy.chandrasekhara.me)
 
 ---
 
-## 📂 Project Structure
+#### 🌸 Hero Section – Welcome Banner
+
+![Hero Section](./public/screenshots/hero.png)
+
+---
+
+#### 🔍 Search Results – Explore Your Favorite Anime
+
+![Search Results](./public/screenshots/search-results.png)
+
+---
+
+#### 📃 Trending Anime – Most Popular Shows
+
+![Trending Anime](./public/screenshots/trending-anime.png)
+
+
+---
+
+## 💻 Tech Stack
+
+| Tech | Purpose |
+|------|---------|
+| ⚛️ React (Vite) | Frontend framework |
+| 🌐 Axios | API requests |
+| 💨 Tailwind CSS | Beautiful & fast UI |
+| 💾 localStorage | Persistent watchlist |
+| 🐱 Anime API | Real-time data from anime APIs like Jikan (MyAnimeList) |
+
+---
+
+## 🔥 Sample Anime Titles
+
+Use these real fan-favorite titles to populate your gallery:
+
+- **🔮 Jujutsu Kaisen**
+- **🔥 Demon Slayer**
+- **⚔️ Attack on Titan**
+- **🦸 My Hero Academia**
+- **🧨 Chainsaw Man**
+- **🕵️ Spy × Family**
+- **📦 One Piece**
+- **⚽ Blue Lock**
+- **🎭 Oshi no Ko**
+- **📜 Frieren: Beyond Journey's End**
+
+---
+
+## 🗂️ Project Structure
 
 ```
 src/
-│
 ├── components/
 │   ├── Anime/
 │   │   ├── Anime.jsx
@@ -69,44 +97,61 @@ src/
 
 ---
 
-## ⚡ Quick Start
+## 🚀 Getting Started
 
-1. **Clone the repo**
-    ```
-    git clone https://github.com/yourusername/anime-ecstasy.git
-    cd anime-ecstasy
-    ```
+### 📦 Clone the Repo
 
-2. **Install dependencies**
-    ```
-    npm install
-    ```
+```
+git clone https://github.com/Chandu6702/anime-ecstasy.git
+cd anime-ecstasy
+```
 
-3. **Run locally**
-    ```
-    npm run dev
-    ```
-    Visit [http://localhost:5173](http://localhost:5173) in your browser.
+### 📥 Install Dependencies
+
+```
+npm install
+```
+
+### 🧪 Run the App
+
+```
+npm run dev
+```
+
+Open your browser and go to: `http://localhost:5173` 🎉
 
 ---
 
-## ✨ Contributing
+## 🤝 Contributing
 
-Contributions, ideas and bug-reports are welcome!  
-Please make sure to **read `CONTRIBUTING.md`** before making a pull request.
+All anime lovers and open-source enthusiasts are welcome!
 
-Just fork, create a branch, push your feature and open a pull request.
-.
+### How to Contribute
+
+1. 🍴 Fork the repository  
+2. 🪴 Create a new branch  
+   ```
+   git checkout -b feature-name
+   ```
+3. 💻 Make your changes  
+4. ✅ Test your changes locally  
+5. 🚀 Open a Pull Request
+
+Please read [`CONTRIBUTION.md`](./CONTRIBUTION.md) for detailed guidelines.
 
 ---
 
 ## 📄 License
 
-MIT License.  
-Enjoy, tweak or share freely!
+This project is licensed under the **MIT License**.  
+You are free to use, modify, and distribute this software as long as the original license is included.
+
+View the full license [here](./LICENSE).
 
 ---
 
-*Made with ❤️ for anime fans.*
+## 💖 Created with Passion
 
+> _“For the fans who start one episode... and end up finishing the whole season at 3AM.”_
 
+Made with ❤️ by **Anime Ecstasy**
