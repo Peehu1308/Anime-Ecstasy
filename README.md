@@ -2,7 +2,7 @@
 # 🌸 Anime Ecstasy
 
 > 🎥 Your ultimate **Anime Discovery & Watchlist App** – powered by React + Tailwind + Anime API  
-> [🌐 Live Demo](https://anime-ecstasy.chandrasekhara.me)      •      ![MIT License](https://img.shields.io/badge/license-MIT-green)
+> [🌐 Live Demo](https://anime-ecstasy.chandrasekhara.me) • ![MIT License](https://img.shields.io/badge/license-MIT-green)
 
 ---
 
@@ -24,7 +24,7 @@
 
 ---
 
-## 🖼️ Screenshots
+### 🖼️ Screenshots
 
 > 🧪 *Try the live version here:* [Anime Ecstasy Demo](https://anime-ecstasy.chandrasekhara.me)
 
