@@ -28,14 +28,25 @@
 
 > 🧪 *Try the live version here:* [Anime Ecstasy Demo](https://anime-ecstasy.chandrasekhara.me)
 
+---
+
+#### 🌸 Hero Section – Welcome Banner
+
 ![Hero Section](./public/screenshots/hero.png)
 
 ---
+
+#### 🔍 Search Results – Explore Your Favorite Anime
+
 ![Search Results](./public/screenshots/search-results.png)
 
 ---
+
+#### 📃 Trending Anime – Most Popular Shows
+
 ![Trending Anime](./public/screenshots/trending-anime.png)
 
+---
 
 ---
 
@@ -127,7 +138,7 @@ All anime lovers and open-source enthusiasts are welcome!
 4. ✅ Test your changes locally  
 5. 🚀 Open a Pull Request
 
-Please read [`CONTRIBUTING.md`](./CONTRIBUTING.md) for detailed guidelines.
+Please read [`CONTRIBUTION.md`](./CONTRIBUTION.md) for detailed guidelines.
 
 ---
 
