@@ -25,7 +25,7 @@ function Anime() {
 
   const handleRemoveFromWatchList = (animeObj) => {
     const filteredWatchlist = watchList.filter((added) => {
-      return added.mal_id != animeObj.mal_id;
+      return added.mal_id != animeObj.mal_id; // it will return added.mal_id
     });
     localStorage.setItem("watchlist", JSON.stringify(filteredWatchlist));
     setWatchList(filteredWatchlist);
