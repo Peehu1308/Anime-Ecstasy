@@ -29,7 +29,11 @@
 > 🧪 *Try the live version here:* [Anime Ecstasy Demo](https://anime-ecstasy.chandrasekhara.me)
 
 ![Hero Section](./public/screenshots/hero.png)
+
+---
 ![Search Results](./public/screenshots/search-results.png)
+
+---
 ![Trending Anime](./public/screenshots/trending-anime.png)
 
 
