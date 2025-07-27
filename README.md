@@ -1,74 +1,157 @@
-<h1 align="center" style="color: black; font-size: 3rem; font-weight: bold;">🎴 Anime Ecstasy</h1>
 
-<p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=22&pause=1000&color=343434&center=true&vCenter=true&width=500&height=45&lines=Your+Personal+Anime+Haven;Explore+Trending+Anime;Build+Your+Watchlist;Built+Using+React%2C+Tailwind+%26+Jikan+API" alt="Typing SVG">
-</p>
+# 🌸 Anime Ecstasy
 
-<h3 align="center">✨ A fast, interactive, and beautifully designed anime discovery <strong>website</strong>.</h3>
+> 🎥 Your ultimate **Anime Discovery & Watchlist App** – powered by React + Tailwind + Anime API  
+> [🌐 Live Demo](https://anime-ecstasy.chandrasekhara.me) • ![MIT License](https://img.shields.io/badge/license-MIT-green)
 
-<br />
+---
 
-<h3 align="left">🚀 Features:</h3>
-<ul>
-  <li>🔥 Trending Anime Gallery with posters and titles</li>
-  <li>📄 Anime Details View with dynamic content</li>
-  <li>➕ Add/Remove from Watchlist (powered by <code>localStorage</code>)</li>
-  <li>🔄 Pagination to navigate through large datasets</li>
-  <li>📱 Fully Responsive UI using Tailwind CSS</li>
-  <li>⚙️ API Integration using Axios + Jikan API</li>
-</ul>
+## 📺 What is Anime Ecstasy?
 
-<br />
+**Anime Ecstasy** is your personal anime dashboard – browse trending anime, add them to your watchlist, and keep track of what you love. A beautiful, responsive UI built for fans by fans.
 
-<h3 align="left">🧱 Tech Stack:</h3>
-<ul>
-  <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" width="25"/> React (Vite)</li>
-  <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="25"/> JavaScript</li>
-  <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width="25"/> Tailwind CSS</li>
-  <li><img src="https://axios-http.com/assets/logo.svg" width="20"/> Axios</li>
-  <li>🧠 Jikan REST API</li>
-  <li>💾 LocalStorage</li>
-</ul>
+---
 
-<br />
+## ✨ Key Features
 
-<h3 align="left">📁 Folder Structure:</h3>
+| Feature | Description |
+|--------|-------------|
+| 🎬 **Trending Anime Gallery** | Explore the most talked-about anime with stunning visuals and titles. |
+| ⭐ **Add to Watchlist** | Found something you like? Save it instantly. Your list is safe even after closing the browser – thanks to `localStorage`. |
+| ❌ **Remove from Watchlist** | No longer interested? Remove any anime with a single click. |
+| 📖 **Pagination** | Browse seamlessly across multiple pages using intuitive pagination. |
+| 📱 **Fully Responsive** | Works flawlessly on mobile, tablet, and desktop screens. |
 
-<pre>
-anime-ecstasy/
-├── public/
-├── src/
-│   ├── assets/
-│   ├── components/
-│   ├── App.jsx
-│   └── main.jsx
-├── tailwind.config.js
-├── postcss.config.js
-├── vite.config.js
-├── CONTRIBUTION.md
-└── README.md
-</pre>
+---
 
-<br />
+### 🖼️ Screenshots
 
-<h3 align="left">✅ How to Run:</h3>
-<pre>
-git clone https://github.com/yourusername/anime-ecstasy.git
+> 🧪 *Try the live version here:* [Anime Ecstasy Demo](https://anime-ecstasy.chandrasekhara.me)
+
+---
+
+#### 🌸 Hero Section – Welcome Banner
+
+![Hero Section](./public/screenshots/hero.png)
+
+---
+
+#### 🔍 Search Results – Explore Your Favorite Anime
+
+![Search Results](./public/screenshots/search-results.png)
+
+---
+
+#### 📃 Trending Anime – Most Popular Shows
+
+![Trending Anime](./public/screenshots/trending-anime.png)
+
+
+---
+
+## 💻 Tech Stack
+
+| Tech | Purpose |
+|------|---------|
+| ⚛️ React (Vite) | Frontend framework |
+| 🌐 Axios | API requests |
+| 💨 Tailwind CSS | Beautiful & fast UI |
+| 💾 localStorage | Persistent watchlist |
+| 🐱 Anime API | Real-time data from anime APIs like Jikan (MyAnimeList) |
+
+---
+
+## 🔥 Sample Anime Titles
+
+Use these real fan-favorite titles to populate your gallery:
+
+- **🔮 Jujutsu Kaisen**
+- **🔥 Demon Slayer**
+- **⚔️ Attack on Titan**
+- **🦸 My Hero Academia**
+- **🧨 Chainsaw Man**
+- **🕵️ Spy × Family**
+- **📦 One Piece**
+- **⚽ Blue Lock**
+- **🎭 Oshi no Ko**
+- **📜 Frieren: Beyond Journey's End**
+
+---
+
+## 🗂️ Project Structure
+
+```
+src/
+├── components/
+│   ├── Anime/
+│   │   ├── Anime.jsx
+│   │   ├── AnimeCard.jsx
+│   │   ├── Banner.jsx
+│   │   └── Pagination.jsx
+│   ├── Navbar.jsx
+│   └── WatchList.jsx
+├── App.jsx
+├── main.jsx
+└── assets/
+```
+
+---
+
+## 🚀 Getting Started
+
+### 📦 Clone the Repo
+
+```
+git clone https://github.com/Chandu6702/anime-ecstasy.git
 cd anime-ecstasy
+```
+
+### 📥 Install Dependencies
+
+```
 npm install
+```
+
+### 🧪 Run the App
+
+```
 npm run dev
-</pre>
+```
 
-<br />
+Open your browser and go to: `http://localhost:5173` 🎉
 
-<h3 align="left">🧑‍💻 Contributions:</h3>
-<p>Before contributing, please check out <code>CONTRIBUTION.md</code> for best practices and guidelines.</p>
+---
 
-<br />
+## 🤝 Contributing
 
-<h3 align="left">📸 Previews:</h3>
-<ul>
-  <li>🎯 Hero banner, anime grid, and watchlist layout</li>
-  <li>🔁 Smooth UI interactions and animations</li>
-  <li>📱 Responsive layout across all devices</li>
-</ul>
+All anime lovers and open-source enthusiasts are welcome!
+
+### How to Contribute
+
+1. 🍴 Fork the repository  
+2. 🪴 Create a new branch  
+   ```
+   git checkout -b feature-name
+   ```
+3. 💻 Make your changes  
+4. ✅ Test your changes locally  
+5. 🚀 Open a Pull Request
+
+Please read [`CONTRIBUTION.md`](./CONTRIBUTION.md) for detailed guidelines.
+
+---
+
+## 📄 License
+
+This project is licensed under the **MIT License**.  
+You are free to use, modify, and distribute this software as long as the original license is included.
+
+View the full license [here](./LICENSE).
+
+---
+
+## 💖 Created with Passion
+
+> _“For the fans who start one episode... and end up finishing the whole season at 3AM.”_
+
+Made with ❤️ by **Anime Ecstasy**

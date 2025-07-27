@@ -1,5 +1,7 @@
-import React from 'react'
-import { NavLink } from 'react-router-dom'
+// import React, { useState } from 'react';
+import { NavLink, useNavigate } from 'react-router-dom';
+// import { FiSearch, FiX } from 'react-icons/fi';
+// import { useAuth } from '../context/AuthContext';
 
 export const Navbar = () => {
     return (
