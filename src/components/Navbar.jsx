@@ -1,7 +1,5 @@
-// import React, { useState } from 'react';
-import { NavLink, useNavigate } from 'react-router-dom';
-// import { FiSearch, FiX } from 'react-icons/fi';
-// import { useAuth } from '../context/AuthContext';
+import React from 'react'
+import { NavLink } from 'react-router-dom'
 
 export const Navbar = () => {
     return (
