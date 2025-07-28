@@ -9,23 +9,18 @@ function WatchList() {
   const [genreList, setGenreList] = useState(["All Genres"]);
   const [currGenre, setCurreGenre] = useState("All Genres");
   const [loading, setLoading] = useState(true);
-  
+
 
   useEffect(() => {
+    setLoading(true);
 
-      setLoading(true);  //start loading
-
-        setTimeout(() => {
-          if (!localStorage.getItem("watchlist")) {
-            setLoading(false); //stop loading
-           return;
-           } 
-          
-           setWatchList(JSON.parse(localStorage.getItem("watchlist")));
-       
-
-        }, 300); // simulate 300ms delay to show spinner
-      
+    setTimeout(() => {
+      const stored = localStorage.getItem("watchlist");
+      if (stored) {
+        setWatchList(JSON.parse(stored));
+      }
+      setLoading(false);
+    }, 300);
   }, []);
 
   const handleSearch = (e) => {
@@ -67,9 +62,9 @@ function WatchList() {
   }, [watchList]);
 
   if (loading)     //if loading is true , return spinner.
-    {
-  return <Spinner />;
-    }
+  {
+    return <Spinner />;
+  }
 
   return (
     <>
