@@ -12,7 +12,7 @@ import {
 } from "lucide-react";
 import { useState, useEffect } from "react";
 
-export default function Footer() {
+function Footer() {
   const [showScrollToTop, setShowScrollToTop] = useState(false);
 
   // Show/hide scroll to top button based on scroll position
@@ -38,7 +38,7 @@ export default function Footer() {
           <a href="#" className="hover:text-blue-400"><Instagram /></a>
         </div>
         <div className="text-center text-sm">
-          © 2025 Anime Ecstasy. Built with <Heart className="inline text-red-500" /> by Nitin.
+          © 2025 Anime Ecstasy. Built with <Heart className="inline text-red-500" />.
         </div>
         <div className="flex space-x-4">
           <a href="#" className="hover:text-blue-400"><Home /></a>
@@ -58,3 +58,5 @@ export default function Footer() {
     </footer>
   );
 }
+
+export default Footer;
